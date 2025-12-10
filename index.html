@@ -1,1 +1,86 @@
-<h1>web pinaculo</h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Su Pináculo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #0c0c1d, #1a1a2e);
+      color: #f5f2e7;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://wallpapers.com/images/hd/purple-space-background-2560-x-1600-mmgzi22e78p5ygyc.jpg');
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 0.2em;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background-color: #1e1e30;
+      color: #f5f2e7;
+      font-size: 16px;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: #f5f2e7;
+      color: #0c0c1d;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ddd9c5;
+    }
+  </style>
+</head>
+<body>
+    <form method="POST" action="http://localhost:8080/pinaculo" class="container">
+        <h1>BIENVENIDO</h1>
+        <h1>SU PINÁCULO</h1>
+        <h2>¿Cuál es su día de nacimiento?</h2>
+        <input type="text" name="dia" placeholder="Día de nacimiento">
+        <input type="text" name="mes" placeholder="Mes de nacimiento">
+        <input type="text" name="anio" placeholder="Año de nacimiento">
+        <button type="submit">ENVIAR</button>
+      </form>
+  </div>
+</body>
+</html>
